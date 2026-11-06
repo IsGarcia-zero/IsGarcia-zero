@@ -21,7 +21,8 @@ that talk to hardware over BLE and USB.
 
 - **Backends that don't lose messages.** Go and Java microservices on AWS SQS, S3 and CloudTrail
   events, NATS in between, Kubernetes on Azure. About 10,000 messages a day, idempotent and retried.
-  I even rewrote one pipeline from Java to C++20 (~30k lines) without breaking a single contract.
+  I even rewrote one pipeline from Java to C++20 (~30k lines) without breaking a single contract;
+  idle memory went from ~150 MB to ~10 MB.
 - **Apps that talk to hardware.** Eight WPF and WinForms apps turned into one Avalonia codebase for
   desktop and mobile; a BLE device manager with mesh provisioning, CBOR and firmware over the air
   (~400 tests); a Flutter field app on Android and iOS; and a key-provisioning app rewritten in pure F#.
