@@ -135,11 +135,10 @@ def banner():
     text = (f'<text x="34" y="120" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="40" '
             f'font-weight="700" fill="{INK}">Eduardo Hernández <tspan fill="{ACCENT}">Vergara</tspan></text>'
             f'<text x="36" y="156" font-family="Consolas, Menlo, monospace" font-size="16" fill="{INK_2}">'
-            f'cellular automata · emergence · slime molds · backend by day</text>'
+            f'cellular automata · backend · cloud · apps for IoT</text>'
             f'<text x="741" y="182" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="11" '
             f'fill="{INK_3}">B3/S23 · pulsar</text>')
-    out = svg(width * cell, height * cell, cell, body, style,
-              "Eduardo Hernández Vergara — cellular automata, emergence, slime molds; Game of Life banner")
+    out = svg(width * cell, height * cell, cell, body, style, "Eduardo Hernández Vergara — Game of Life banner")
     return out.replace("</svg>", text + "</svg>")
 
 

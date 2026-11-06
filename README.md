@@ -1,16 +1,15 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Eduardo Hernández Vergara — cellular automata, emergence, slime molds. Lightweight spaceships from Conway's Game of Life fly around the name.">
+  <img src="assets/banner.svg" width="100%" alt="Eduardo Hernández Vergara — cellular automata, backend, cloud, apps for IoT. Lightweight spaceships from Conway's Game of Life fly around the name.">
 </p>
 
 ### Hi, I'm Eduardo 👋
 
-I'm into cellular automata: a grid, a handful of local rules, no one in charge, and somehow you get
-gliders, chaos, traffic jams and a slime mold that solves mazes. I find that slightly unsettling and
-I can't stop looking at it.
+Cellular automata are my thing: a few local rules, no one in charge, and somehow you get gliders,
+chaos and a slime mold that solves mazes. My thesis was exactly that: a *Physarum polycephalum*
+automaton finding its way through caves and catacombs, which we presented at CANDAR 2024 in Okinawa. 🦠
 
-My thesis was exactly that: a *Physarum polycephalum* automaton that finds its way through caves and
-catacombs. We presented it at CANDAR 2024 in Okinawa, and then I put it inside a robot with a LiDAR,
-because a simulation alone didn't feel weird enough. 🦠
+For a living I'm a backend and cloud engineer in Mexico City: event-driven backends on AWS and apps
+that talk to hardware over BLE and USB.
 
 **[Open my CV](https://isgarcia-zero.github.io/)** · [English version](https://isgarcia-zero.github.io/?lang=en) ·
 [LinkedIn](https://www.linkedin.com/in/eduardo-hernandez-vergara-369366246) ·
@@ -18,64 +17,39 @@ because a simulation alone didn't feel weird enough. 🦠
 
 <img src="assets/rule30.svg" width="100%" alt="Rule 30 running from a random row, revealed line by line">
 
-### 🧬 Automata I've raised
+### 🧬 Things I've built
 
-- **Physarum, the brainless co-author.** A 9-state automaton with memory per cell that traces routes
-  through mazes, caves and real floor plans loaded with OpenCV. It started in SFML; in 2026 I ported it
-  to Vulkan compute shaders and now it chews through 4000 × 4000 cells.
-- **All 256 Wolfram rules,** with density plots, attractors, graphs and LaTeX reports written by the
-  program itself, because I wanted to stare at every single one.
-- **The Game of Life,** with configurable B/S rules, population charts and attractors exported to Graphviz.
-- **Traffic as rule 184:** two streets, one intersection, cars that are just ones and zeros.
-- **A small zoo on my CV:** Langton's ant, Brian's Brain, a cyclic automaton, Wireworld and rules 30, 90,
-  110 and 184, all running live.
-
-### 💼 What I do for a living
-
-Backend and cloud engineer at Distribuciones Cantilever (Mexico City), working on IoT platforms for
-metering and monitoring the power grid, from AWS down to devices in the field.
-
-- **Cloud backend, built end to end on my own.** Go and Java microservices that consume AWS SQS queues
-  and S3 and CloudTrail events, talk over NATS and deploy to Kubernetes on Azure. About 10,000 messages
-  a day go through it.
-- **An event-driven pipeline for binary metering files** (FTPS/S3, NDJSON decoding, idempotent
-  persistence, lease-based retries), first in Java/Quarkus and then rewritten in C++20 (~30k lines)
-  without breaking a single contract.
-- **AWS administration:** CloudTrail, EC2, S3, EKS, DynamoDB, EventBridge, SQS and IAM; log ingestion
-  and auditing, and a Kubernetes agent that checks every deployment runs the expected image.
-- **Apps that talk to hardware.** About eight WPF and WinForms apps migrated to Avalonia on .NET 8/10,
-  one codebase for desktop and mobile; a BLE device manager with mesh provisioning, CBOR commands and
-  firmware over the air, backed by ~400 automated tests in GitLab CI; a Flutter field app shipped to
-  Android and iOS; and an electronic-key provisioning app rewritten in F# with MVU.
-
-Before that: .NET Senior Analyst at IMPI, and two years of research at ALIROB (Instituto Politécnico
-Nacional), where the automata above were born. B.Sc. in Computer Systems Engineering from ESCOM-IPN,
-graduated with honors.
-
-**Open to backend, cloud and software engineering roles**, on-site, hybrid or remote, and open to
-relocation. That work lives in private repositories; the [full CV](https://isgarcia-zero.github.io/) has
-case studies and screenshots. And yes, it's also what keeps the automata above running.
+- **Backends that don't lose messages.** Go and Java microservices on AWS SQS, S3 and CloudTrail
+  events, NATS in between, Kubernetes on Azure. About 10,000 messages a day, idempotent and retried.
+  I even rewrote one pipeline from Java to C++20 (~30k lines) without breaking a single contract.
+- **Apps that talk to hardware.** Eight WPF and WinForms apps turned into one Avalonia codebase for
+  desktop and mobile; a BLE device manager with mesh provisioning, CBOR and firmware over the air
+  (~400 tests); a Flutter field app on Android and iOS; and a key-provisioning app rewritten in pure F#.
+- **Tiny rules, huge behavior.** All 256 Wolfram rules, the Game of Life, traffic simulated with rule 184,
+  and a robot that follows paths drawn by a slime-mold automaton.
 
 ### 🎮 Play with my CV
 
-It isn't a PDF: it's an F# app (Bolero + Blazor WebAssembly) wrapped around that zoo. Drop ants on
-Langton's grid, select any text and rule 30 will run inside your selection, or type `life` anywhere
-on the page and see what happens to it.
+It isn't a PDF: it's an F# app (Bolero + Blazor WebAssembly) with a small automata lab.
+Drop ants on Langton's grid, watch Brian's Brain and Wireworld, then select any text and rule 30
+will run inside your selection. Psst: type `life` anywhere on the page.
 
 ### 📌 Public projects
 
 | | Repository | What it is |
 | --- | --- | --- |
+| 🌐 | [cv-web-fs](https://github.com/IsGarcia-zero/cv-web-fs) | My CV in F# (Bolero, Blazor WebAssembly, MVU), prerendered, with ATS-friendly PDFs per role |
 | 🦠 | [Physarum-Automata](https://github.com/Jessenox/Physarum-Automata) | Thesis simulation (co-authored): Physarum with cellular automata, C++, later Vulkan compute shaders |
 | 🔺 | [cellularAutomataECARules](https://github.com/IsGarcia-zero/cellularAutomataECARules) | All 256 elementary rules: density, attractors, graphs, auto-generated LaTeX reports |
 | 🛸 | [juegoDeLaVida](https://github.com/IsGarcia-zero/juegoDeLaVida) | Conway's Game of Life with configurable rules, population charts and attractors |
 | 🚦 | [traficoControlECARules](https://github.com/IsGarcia-zero/traficoControlECARules) | An intersection where cars follow rule 184 |
-| 🤖 | [Teoria-Computacional](https://github.com/IsGarcia-zero/Teoria-Computacional) | The rest of the automata family: DFA, NFA, pushdown automaton and a Turing machine |
-| 🌐 | [cv-web-fs](https://github.com/IsGarcia-zero/cv-web-fs) | My CV in F# (Bolero, Blazor WebAssembly, MVU), with the automata lab inside |
+| 🤖 | [Teoria-Computacional](https://github.com/IsGarcia-zero/Teoria-Computacional) | DFA, NFA, pushdown automaton and a Turing machine |
+
+Most of my day-to-day work lives in private repositories, so this is the fun part. 🙂
 
 ### 🛠️ Stack
 
-C++ · Vulkan · C# / .NET · F# · Go · Java · TypeScript · AWS · Kubernetes · NATS · Avalonia · Flutter
+Go · C# / .NET · F# · C++20 · Java · TypeScript · AWS · Kubernetes · NATS · PostgreSQL · Avalonia · Flutter
 
 🗣️ Spanish (native) · English (B2) · Japanese (A2)
 
@@ -84,4 +58,4 @@ C++ · Vulkan · C# / .NET · F# · Go · Java · TypeScript · AWS · Kubernete
 <img src="assets/glider.svg" width="32" align="left" alt="A glider">
 
 <sub>Nothing above is hand-drawn: the banner is Conway's Game of Life (B3/S23), the strip is rule 30,
-and this glider loops around a tiny torus forever. They come out of <a href="assets/automata.py">a small script</a> that runs the real rules.</sub>
+and this glider loops around a tiny torus. They come out of <a href="assets/automata.py">a small script</a> that runs the real rules.</sub>
