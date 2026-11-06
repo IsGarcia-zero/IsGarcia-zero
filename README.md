@@ -30,6 +30,32 @@ because a simulation alone didn't feel weird enough. 🦠
 - **A small zoo on my CV:** Langton's ant, Brian's Brain, a cyclic automaton, Wireworld and rules 30, 90,
   110 and 184, all running live.
 
+### 💼 What I do for a living
+
+Backend and cloud engineer at Distribuciones Cantilever (Mexico City), working on IoT platforms for
+metering and monitoring the power grid, from AWS down to devices in the field.
+
+- **Cloud backend, built end to end on my own.** Go and Java microservices that consume AWS SQS queues
+  and S3 and CloudTrail events, talk over NATS and deploy to Kubernetes on Azure. About 10,000 messages
+  a day go through it.
+- **An event-driven pipeline for binary metering files** (FTPS/S3, NDJSON decoding, idempotent
+  persistence, lease-based retries), first in Java/Quarkus and then rewritten in C++20 (~30k lines)
+  without breaking a single contract.
+- **AWS administration:** CloudTrail, EC2, S3, EKS, DynamoDB, EventBridge, SQS and IAM; log ingestion
+  and auditing, and a Kubernetes agent that checks every deployment runs the expected image.
+- **Apps that talk to hardware.** About eight WPF and WinForms apps migrated to Avalonia on .NET 8/10,
+  one codebase for desktop and mobile; a BLE device manager with mesh provisioning, CBOR commands and
+  firmware over the air, backed by ~400 automated tests in GitLab CI; a Flutter field app shipped to
+  Android and iOS; and an electronic-key provisioning app rewritten in F# with MVU.
+
+Before that: .NET Senior Analyst at IMPI, and two years of research at ALIROB (Instituto Politécnico
+Nacional), where the automata above were born. B.Sc. in Computer Systems Engineering from ESCOM-IPN,
+graduated with honors.
+
+**Open to backend, cloud and software engineering roles**, on-site, hybrid or remote, and open to
+relocation. That work lives in private repositories; the [full CV](https://isgarcia-zero.github.io/) has
+case studies and screenshots. And yes, it's also what keeps the automata above running.
+
 ### 🎮 Play with my CV
 
 It isn't a PDF: it's an F# app (Bolero + Blazor WebAssembly) wrapped around that zoo. Drop ants on
@@ -46,12 +72,6 @@ on the page and see what happens to it.
 | 🚦 | [traficoControlECARules](https://github.com/IsGarcia-zero/traficoControlECARules) | An intersection where cars follow rule 184 |
 | 🤖 | [Teoria-Computacional](https://github.com/IsGarcia-zero/Teoria-Computacional) | The rest of the automata family: DFA, NFA, pushdown automaton and a Turing machine |
 | 🌐 | [cv-web-fs](https://github.com/IsGarcia-zero/cv-web-fs) | My CV in F# (Bolero, Blazor WebAssembly, MVU), with the automata lab inside |
-
-### 💼 How I keep my cells fed
-
-By day I'm a backend and cloud engineer. Go and Java microservices on AWS and NATS, deployed to
-Kubernetes; apps that talk to hardware over BLE and USB in Avalonia, Flutter and F#. That work lives in
-private repositories, and it's the reason the automata above get electricity.
 
 ### 🛠️ Stack
 
