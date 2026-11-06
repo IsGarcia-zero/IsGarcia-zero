@@ -50,7 +50,7 @@ Most of my day-to-day work lives in private repositories, so this is the fun par
 
 Go · C# / .NET · F# · C++20 · Java · TypeScript · AWS · Kubernetes · NATS · PostgreSQL · Avalonia · Flutter
 
-🇲🇽 Spanish (native) · 🇬🇧 English (B2) · 🇯🇵 Japanese (A2)
+🗣️ Spanish (native) · English (B2) · Japanese (A2)
 
 ---
 
